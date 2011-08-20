@@ -1,0 +1,3 @@
+This project a mirror of the OpenJDK Javac Compiler but only the Java Source.
+
+Use this for static analysis, dynamic java compiles or other projects. 
