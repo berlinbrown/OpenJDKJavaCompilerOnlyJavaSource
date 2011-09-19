@@ -1,0 +1,71 @@
+public class Maim extends java.lang.Object
+  minor version: 0
+  major version: 50
+  Constant pool:
+const #1 = Method	#11.#17;	//  java/lang/Object."<init>":()V
+const #2 = Field	#18.#19;	//  java/lang/System.out:Ljava/io/PrintStream;
+const #3 = class	#20;	//  java/lang/StringBuilder
+const #4 = Method	#3.#17;	//  java/lang/StringBuilder."<init>":()V
+const #5 = String	#21;	//  Done:
+const #6 = Method	#3.#22;	//  java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+const #7 = Method	#3.#23;	//  java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+const #8 = Method	#3.#24;	//  java/lang/StringBuilder.toString:()Ljava/lang/String;
+const #9 = Method	#25.#26;	//  java/io/PrintStream.println:(Ljava/lang/String;)V
+const #10 = class	#27;	//  Maim
+const #11 = class	#28;	//  java/lang/Object
+const #12 = Asciz	<init>;
+const #13 = Asciz	()V;
+const #14 = Asciz	Code;
+const #15 = Asciz	main;
+const #16 = Asciz	([Ljava/lang/String;)V;
+const #17 = NameAndType	#12:#13;//  "<init>":()V
+const #18 = class	#29;	//  java/lang/System
+const #19 = NameAndType	#30:#31;//  out:Ljava/io/PrintStream;
+const #20 = Asciz	java/lang/StringBuilder;
+const #21 = Asciz	Done:;
+const #22 = NameAndType	#32:#33;//  append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+const #23 = NameAndType	#32:#34;//  append:(I)Ljava/lang/StringBuilder;
+const #24 = NameAndType	#35:#36;//  toString:()Ljava/lang/String;
+const #25 = class	#37;	//  java/io/PrintStream
+const #26 = NameAndType	#38:#39;//  println:(Ljava/lang/String;)V
+const #27 = Asciz	Maim;
+const #28 = Asciz	java/lang/Object;
+const #29 = Asciz	java/lang/System;
+const #30 = Asciz	out;
+const #31 = Asciz	Ljava/io/PrintStream;;
+const #32 = Asciz	append;
+const #33 = Asciz	(Ljava/lang/String;)Ljava/lang/StringBuilder;;
+const #34 = Asciz	(I)Ljava/lang/StringBuilder;;
+const #35 = Asciz	toString;
+const #36 = Asciz	()Ljava/lang/String;;
+const #37 = Asciz	java/io/PrintStream;
+const #38 = Asciz	println;
+const #39 = Asciz	(Ljava/lang/String;)V;
+
+{
+public Maim();
+  Code:
+   Stack=1, Locals=1, Args_size=1
+   0:	aload_0
+   1:	invokespecial	#1; //Method java/lang/Object."<init>":()V
+   4:	return
+
+public static void main(java.lang.String[]);
+  Code:
+   Stack=3, Locals=2, Args_size=1
+   0:	bipush	17
+   2:	istore_1
+   3:	getstatic	#2; //Field java/lang/System.out:Ljava/io/PrintStream;
+   6:	new	#3; //class java/lang/StringBuilder
+   9:	dup
+   10:	invokespecial	#4; //Method java/lang/StringBuilder."<init>":()V
+   13:	ldc	#5; //String Done:
+   15:	invokevirtual	#6; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   18:	iload_1
+   19:	invokevirtual	#7; //Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+   22:	invokevirtual	#8; //Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+   25:	invokevirtual	#9; //Method java/io/PrintStream.println:(Ljava/lang/String;)V
+   28:	return
+
+}
+
