@@ -373,6 +373,7 @@ public class Code {
     /** Emit four bytes of code.
      */
     public void emit4(int od) {
+        System.out.println("Code : CALL write to buffer : /emit4/ code[cp] " + od);
         if (!alive) return;
         if (cp + 4 > code.length) {
             emit1(od >> 24);
@@ -394,7 +395,7 @@ public class Code {
     /** Emit an opcode.
      */
     private void emitop(int op) {
-        System.out.println(">> emit op");
+        System.out.println(">> !!! CALL emit op");
         if (pendingJumps != null) resolvePending();
         if (alive) {
             if (pendingStatPos != Position.NOPOS)
@@ -418,10 +419,13 @@ public class Code {
     /** Emit a multinewarray instruction.
      */
     public void emitMultianewarray(int ndims, int type, Type arrayType) {
+        System.out.println("Code : CALL emit multi new array emitOp=" +  multianewarray + " emit2=" + type + " ndims=" + ndims);
+        
         emitop(multianewarray);
         if (!alive) return;
         emit2(type);
         emit1(ndims);
+        
         state.pop(ndims);
         state.push(arrayType);
     }
@@ -429,6 +433,7 @@ public class Code {
     /** Emit newarray.
      */
     public void emitNewarray(int elemcode, Type arrayType) {
+        System.out.println("Code : CALL emit new array emit1=" + elemcode);
         emitop(newarray);
         if (!alive) return;
         emit1(elemcode);
@@ -449,13 +454,15 @@ public class Code {
     /** Emit an invokeinterface instruction.
      */
     public void emitInvokeinterface(int meth, Type mtype) {
-        System.out.println(">> emit invoke interface");
+        System.out.println(">> emit invoke interface meth=" + meth);
         int argsize = width(mtype.getParameterTypes());
+        
         emitop(invokeinterface);
         if (!alive) return;
         emit2(meth);
         emit1(argsize + 1);
         emit1(0);
+        System.out.println(">> end of emit invoke");
         state.pop(argsize + 1);
         state.push(mtype.getReturnType());
     }
@@ -474,6 +481,8 @@ public class Code {
             state.markInitialized((UninitializedType)state.peek());
         state.pop(1);
         state.push(mtype.getReturnType());
+        
+        System.out.println("End of emit invoke special");
     }
 
     /** Emit an invokestatic instruction.
@@ -486,6 +495,8 @@ public class Code {
         emit2(meth);
         state.pop(argsize);
         state.push(mtype.getReturnType());
+        
+        System.out.println(">> emit invoke static meth=" + meth);
     }
 
     /** Emit an invokevirtual instruction.
@@ -498,12 +509,14 @@ public class Code {
         emit2(meth);
         state.pop(argsize + 1);
         state.push(mtype.getReturnType());
+        
+        System.out.println(">> end emit invoke virtual" + meth);
     }
 
     /** Emit an opcode with no operand field.
      */
     public void emitop0(int op) {
-        System.out.println(">> emit op 0");
+        System.out.println(">> emit op 0 (no operand), op=" + op);
         emitop(op);
         if (!alive) return;
         switch (op) {
@@ -937,6 +950,7 @@ public class Code {
      *  widen if field does not fit in a byte.
      */
     public void emitop1w(int op, int od) {
+        System.out.println(">> emit op 1w (one byte oper), op=" + op +  " od=" + od);
         if (od > 0xFF) {
             emitop(wide);
             emitop(op);
@@ -984,6 +998,7 @@ public class Code {
      *  widen if either field does not fit in a byte.
      */
     public void emitop1w(int op, int od1, int od2) {
+        System.out.println(">> emit op 1w (two one byte oper), op=" + op +" od=" + od1 + " od2=" + od2);
         if (od1 > 0xFF || od2 < -128 || od2 > 127) {
             emitop(wide);
             emitop(op);
@@ -1006,6 +1021,7 @@ public class Code {
     /** Emit an opcode with a two-byte operand field.
      */
     public void emitop2(int op, int od) {
+        System.out.println(">> emit op2 (two byte), op=" + op + " od=" + od);
         emitop(op);
         if (!alive) return;
         emit2(od);
@@ -1082,6 +1098,7 @@ public class Code {
     /** Emit an opcode with a four-byte operand field.
      */
     public void emitop4(int op, int od) {
+        System.out.println(">> emit op4 four byte op=" + op + " od=" + od );
         emitop(op);
         if (!alive) return;
         emit4(od);
