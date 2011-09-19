@@ -1,0 +1,24 @@
+public class Test2 extends java.lang.Object
+  minor version: 0
+  major version: 50
+  Constant pool:
+const #1 = Method	#3.#7;	//  java/lang/Object."<init>":()V
+const #2 = class	#8;	//  Test2
+const #3 = class	#9;	//  java/lang/Object
+const #4 = Asciz	<init>;
+const #5 = Asciz	()V;
+const #6 = Asciz	Code;
+const #7 = NameAndType	#4:#5;//  "<init>":()V
+const #8 = Asciz	Test2;
+const #9 = Asciz	java/lang/Object;
+
+{
+public Test2();
+  Code:
+   Stack=1, Locals=1, Args_size=1
+   0:	aload_0
+   1:	invokespecial	#1; //Method java/lang/Object."<init>":()V
+   4:	return
+
+}
+

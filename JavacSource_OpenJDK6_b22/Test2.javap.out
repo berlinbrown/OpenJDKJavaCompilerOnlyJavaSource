@@ -1,0 +1,32 @@
+Compiled from "Test2.java"
+public class Test2 extends java.lang.Object
+  SourceFile: "Test2.java"
+  minor version: 0
+  major version: 50
+  Constant pool:
+const #1 = Method	#3.#10;	//  java/lang/Object."<init>":()V
+const #2 = class	#11;	//  Test2
+const #3 = class	#12;	//  java/lang/Object
+const #4 = Asciz	<init>;
+const #5 = Asciz	()V;
+const #6 = Asciz	Code;
+const #7 = Asciz	LineNumberTable;
+const #8 = Asciz	SourceFile;
+const #9 = Asciz	Test2.java;
+const #10 = NameAndType	#4:#5;//  "<init>":()V
+const #11 = Asciz	Test2;
+const #12 = Asciz	java/lang/Object;
+
+{
+public Test2();
+  Code:
+   Stack=1, Locals=1, Args_size=1
+   0:	aload_0
+   1:	invokespecial	#1; //Method java/lang/Object."<init>":()V
+   4:	return
+  LineNumberTable: 
+   line 1: 0
+
+
+}
+

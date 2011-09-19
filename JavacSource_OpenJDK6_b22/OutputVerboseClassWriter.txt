@@ -1,0 +1,289 @@
+DBG1644: WRITING CLASS FILE
+DBG1653: POOL -> berlin.com.sun.tools.javac.jvm.Pool@1c8fb4b
+Flags : super
+>>> About to appendChar : operation msg=Appending char flags
+databuf: Some Byte Buffer : Attempt to append char 33
+>>> About to appendChar : operation msg=Appending char, pool.put(c)
+databuf: Some Byte Buffer : Attempt to append char 2
+databuf: Some Byte Buffer : Attempt to append char 3
+>>> About to appendChar : operation msg=Write number of interfaces
+databuf: Some Byte Buffer : Attempt to append char 0
+DBG1704: fieldsCount=0
+
+
+>>> About to appendChar : operation msg=Appending char fieldsCount
+databuf: Some Byte Buffer : Attempt to append char 0
+Write Fields
+Write Fields - Vars
+End of write fields <<<
+>>> About to appendChar : operation msg=Appending char methodsCount
+databuf: Some Byte Buffer : Attempt to append char 1
+DB1068: writeMethod called ---
+databuf: Some Byte Buffer : Attempt to append char 1073741825
+>>> About to appendChar : operation msg=Field Name
+databuf: Some Byte Buffer : Attempt to append char 4
+About to append byte : msg=Append byte to sig buf for method
+typeSignatureBuf: Some Byte Buffer : (appendByte) : 40
+typeSignatureBuf: Some Byte Buffer : (appendByte) : 41
+About to append byte : msg=Append byte to sig buf for void
+typeSignatureBuf: Some Byte Buffer : (appendByte) : 86
+>>> About to appendChar : operation msg=External Type Write
+databuf: Some Byte Buffer : Attempt to append char 5
+databuf: Some Byte Buffer : Attempt to append char 0
+>>> Write Attr : Append Char and Append Int, name = Code
+>>> About to appendChar : operation msg=Append Databuf, for write attr - Code
+databuf: Some Byte Buffer : Attempt to append char 6
+databuf: Some Byte Buffer : Attempt to append int 0
+
+>>>>> Writing code
+>>> About to appendChar : operation msg=Write databuf, max stack
+databuf: Some Byte Buffer : Attempt to append char 1
+>>> About to appendChar : operation msg=Write databuf, max locals
+databuf: Some Byte Buffer : Attempt to append char 1
+databuf: Some Byte Buffer : Attempt to append int 5
+databuf: Some Byte Buffer : (appendBytes) do a copy from 'bs' to current elems, new size : 65520
+>>> About to appendChar : operation msg=Catch info length
+databuf: Some Byte Buffer : Attempt to append char 0
+databuf: Some Byte Buffer : Attempt to append char 0
+>> At endAttrs
+At putchar <</REPLACE, set buf at position=41 with value : 0
+<<< End of write code
+
+
+>>>>>> writeMemberAttrs
+>> At endAttrs
+At putchar <</REPLACE, set buf at position=18 with value : 1
+End of write methods <<<
+databuf: Some Byte Buffer : Attempt to append char 0
+
+---------- about to write constant pool !!
+
+poolbuf - AppendInt called, msg=CAFEBABE javaMagic int to poolbuf
+poolbuf: Some Byte Buffer : Attempt to append int -889275714
+>>> About to appendChar : operation msg=minor version to poolbuf
+poolbuf: Some Byte Buffer : Attempt to append char 0
+>>> About to appendChar : operation msg=major version to poolbuf
+poolbuf: Some Byte Buffer : Attempt to append char 50
+DBG547: Write Pool
+DBG550: poolCountIdx = 8
+poolbuf: Some Byte Buffer : Attempt to append char 0
+DBG559: -------
+DBG560: at pool iterator = 1
+DBG559: at pool iterator = Object()
+poolbuf: Some Byte Buffer : (appendByte) : 10
+poolbuf: Some Byte Buffer : Attempt to append char 3
+poolbuf: Some Byte Buffer : Attempt to append char 7
+writePool : 1
+DBG559: -------
+DBG560: at pool iterator = 2
+DBG559: at pool iterator = Test2
+poolbuf: Some Byte Buffer : (appendByte) : 7
+poolbuf: Some Byte Buffer : Attempt to append char 8
+writePool : 4
+DBG559: -------
+DBG560: at pool iterator = 3
+DBG559: at pool iterator = java.lang.Object
+poolbuf: Some Byte Buffer : (appendByte) : 7
+poolbuf: Some Byte Buffer : Attempt to append char 9
+writePool : 4
+DBG559: -------
+DBG560: at pool iterator = 4
+DBG559: at pool iterator = <init>
+poolbuf: Some Byte Buffer : (appendByte) : 1
+poolbuf: Some Byte Buffer : Attempt to append char 6
+poolbuf: Some Byte Buffer : (appendBytes) do a copy from 'bs' to current elems, new size : 131056
+writePool : 3, name=<init> index in Table=15
+DBG559: -------
+DBG560: at pool iterator = 5
+DBG559: at pool iterator = ()V
+poolbuf: Some Byte Buffer : (appendByte) : 1
+poolbuf: Some Byte Buffer : Attempt to append char 3
+poolbuf: Some Byte Buffer : (appendBytes) do a copy from 'bs' to current elems, new size : 131056
+writePool : 3, name=()V index in Table=7547
+DBG559: -------
+DBG560: at pool iterator = 6
+DBG559: at pool iterator = Code
+poolbuf: Some Byte Buffer : (appendByte) : 1
+poolbuf: Some Byte Buffer : Attempt to append char 4
+poolbuf: Some Byte Buffer : (appendBytes) do a copy from 'bs' to current elems, new size : 131056
+writePool : 3, name=Code index in Table=318
+DBG559: -------
+DBG560: at pool iterator = 7
+DBG559: at pool iterator = berlin.com.sun.tools.javac.jvm.ClassFile$NameAndType@6cb3328
+poolbuf: Some Byte Buffer : (appendByte) : 12
+poolbuf: Some Byte Buffer : Attempt to append char 4
+About to append byte : msg=Append byte to sig buf for method
+typeSignatureBuf: Some Byte Buffer : (appendByte) : 40
+typeSignatureBuf: Some Byte Buffer : (appendByte) : 41
+About to append byte : msg=Append byte to sig buf for void
+typeSignatureBuf: Some Byte Buffer : (appendByte) : 86
+poolbuf: Some Byte Buffer : Attempt to append char 5
+writePool : 5
+DBG559: -------
+DBG560: at pool iterator = 8
+DBG559: at pool iterator = Test2
+poolbuf: Some Byte Buffer : (appendByte) : 1
+poolbuf: Some Byte Buffer : Attempt to append char 5
+poolbuf: Some Byte Buffer : (appendBytes) do a copy from 'bs' to current elems, new size : 131056
+writePool : 3, name=Test2 index in Table=2563
+DBG559: -------
+DBG560: at pool iterator = 9
+DBG559: at pool iterator = java/lang/Object
+poolbuf: Some Byte Buffer : (appendByte) : 1
+poolbuf: Some Byte Buffer : Attempt to append char 16
+poolbuf: Some Byte Buffer : (appendBytes) do a copy from 'bs' to current elems, new size : 131056
+writePool : 3, name=java/lang/Object index in Table=7550
+About to call put char : index=8 size?10
+At putchar <</REPLACE, set buf at position=8 with value : 10
+End of Write Pool
+
+>> At endAttrs
+At putchar <</REPLACE, set buf at position=43 with value : 0
+>> Call to out.write : [first do a copy.appendBytes] (add databuf TO poolbuf) elements=131056
+>> Call to out.write : databuf size : 65520
+poolbuf: Some Byte Buffer : (appendBytes) do a copy from 'bs' to current elems, new size : 131056
+Compile complete with : status=0DBG1644: WRITING CLASS FILE
+DBG1653: POOL -> berlin.com.sun.tools.javac.jvm.Pool@1c8fb4b
+Flags : super
+>>> About to appendChar : operation msg=Appending char flags
+databuf: Some Byte Buffer : Attempt to append char 33
+>>> About to appendChar : operation msg=Appending char, pool.put(c)
+databuf: Some Byte Buffer : Attempt to append char 2
+databuf: Some Byte Buffer : Attempt to append char 3
+>>> About to appendChar : operation msg=Write number of interfaces
+databuf: Some Byte Buffer : Attempt to append char 0
+DBG1704: fieldsCount=0
+
+
+>>> About to appendChar : operation msg=Appending char fieldsCount
+databuf: Some Byte Buffer : Attempt to append char 0
+Write Fields
+Write Fields - Vars
+End of write fields <<<
+>>> About to appendChar : operation msg=Appending char methodsCount
+databuf: Some Byte Buffer : Attempt to append char 1
+DB1068: writeMethod called ---
+databuf: Some Byte Buffer : Attempt to append char 1073741825
+>>> About to appendChar : operation msg=Field Name
+databuf: Some Byte Buffer : Attempt to append char 4
+About to append byte : msg=Append byte to sig buf for method
+typeSignatureBuf: Some Byte Buffer : (appendByte) : 40
+typeSignatureBuf: Some Byte Buffer : (appendByte) : 41
+About to append byte : msg=Append byte to sig buf for void
+typeSignatureBuf: Some Byte Buffer : (appendByte) : 86
+>>> About to appendChar : operation msg=External Type Write
+databuf: Some Byte Buffer : Attempt to append char 5
+databuf: Some Byte Buffer : Attempt to append char 0
+>>> Write Attr : Append Char and Append Int, name = Code
+>>> About to appendChar : operation msg=Append Databuf, for write attr - Code
+databuf: Some Byte Buffer : Attempt to append char 6
+databuf: Some Byte Buffer : Attempt to append int 0
+
+>>>>> Writing code
+>>> About to appendChar : operation msg=Write databuf, max stack
+databuf: Some Byte Buffer : Attempt to append char 1
+>>> About to appendChar : operation msg=Write databuf, max locals
+databuf: Some Byte Buffer : Attempt to append char 1
+databuf: Some Byte Buffer : Attempt to append int 5
+databuf: Some Byte Buffer : (appendBytes) do a copy from 'bs' to current elems, new size : 65520
+>>> About to appendChar : operation msg=Catch info length
+databuf: Some Byte Buffer : Attempt to append char 0
+databuf: Some Byte Buffer : Attempt to append char 0
+>> At endAttrs
+At putchar <</REPLACE, set buf at position=41 with value : 0
+<<< End of write code
+
+
+>>>>>> writeMemberAttrs
+>> At endAttrs
+At putchar <</REPLACE, set buf at position=18 with value : 1
+End of write methods <<<
+databuf: Some Byte Buffer : Attempt to append char 0
+
+---------- about to write constant pool !!
+
+poolbuf - AppendInt called, msg=CAFEBABE javaMagic int to poolbuf
+poolbuf: Some Byte Buffer : Attempt to append int -889275714
+>>> About to appendChar : operation msg=minor version to poolbuf
+poolbuf: Some Byte Buffer : Attempt to append char 0
+>>> About to appendChar : operation msg=major version to poolbuf
+poolbuf: Some Byte Buffer : Attempt to append char 50
+DBG547: Write Pool
+DBG550: poolCountIdx = 8
+poolbuf: Some Byte Buffer : Attempt to append char 0
+DBG559: -------
+DBG560: at pool iterator = 1
+DBG559: at pool iterator = Object()
+poolbuf: Some Byte Buffer : (appendByte) : 10
+poolbuf: Some Byte Buffer : Attempt to append char 3
+poolbuf: Some Byte Buffer : Attempt to append char 7
+writePool : 1
+DBG559: -------
+DBG560: at pool iterator = 2
+DBG559: at pool iterator = Test2
+poolbuf: Some Byte Buffer : (appendByte) : 7
+poolbuf: Some Byte Buffer : Attempt to append char 8
+writePool : 4
+DBG559: -------
+DBG560: at pool iterator = 3
+DBG559: at pool iterator = java.lang.Object
+poolbuf: Some Byte Buffer : (appendByte) : 7
+poolbuf: Some Byte Buffer : Attempt to append char 9
+writePool : 4
+DBG559: -------
+DBG560: at pool iterator = 4
+DBG559: at pool iterator = <init>
+poolbuf: Some Byte Buffer : (appendByte) : 1
+poolbuf: Some Byte Buffer : Attempt to append char 6
+poolbuf: Some Byte Buffer : (appendBytes) do a copy from 'bs' to current elems, new size : 131056
+writePool : 3, name=<init> index in Table=15
+DBG559: -------
+DBG560: at pool iterator = 5
+DBG559: at pool iterator = ()V
+poolbuf: Some Byte Buffer : (appendByte) : 1
+poolbuf: Some Byte Buffer : Attempt to append char 3
+poolbuf: Some Byte Buffer : (appendBytes) do a copy from 'bs' to current elems, new size : 131056
+writePool : 3, name=()V index in Table=7547
+DBG559: -------
+DBG560: at pool iterator = 6
+DBG559: at pool iterator = Code
+poolbuf: Some Byte Buffer : (appendByte) : 1
+poolbuf: Some Byte Buffer : Attempt to append char 4
+poolbuf: Some Byte Buffer : (appendBytes) do a copy from 'bs' to current elems, new size : 131056
+writePool : 3, name=Code index in Table=318
+DBG559: -------
+DBG560: at pool iterator = 7
+DBG559: at pool iterator = berlin.com.sun.tools.javac.jvm.ClassFile$NameAndType@6cb3328
+poolbuf: Some Byte Buffer : (appendByte) : 12
+poolbuf: Some Byte Buffer : Attempt to append char 4
+About to append byte : msg=Append byte to sig buf for method
+typeSignatureBuf: Some Byte Buffer : (appendByte) : 40
+typeSignatureBuf: Some Byte Buffer : (appendByte) : 41
+About to append byte : msg=Append byte to sig buf for void
+typeSignatureBuf: Some Byte Buffer : (appendByte) : 86
+poolbuf: Some Byte Buffer : Attempt to append char 5
+writePool : 5
+DBG559: -------
+DBG560: at pool iterator = 8
+DBG559: at pool iterator = Test2
+poolbuf: Some Byte Buffer : (appendByte) : 1
+poolbuf: Some Byte Buffer : Attempt to append char 5
+poolbuf: Some Byte Buffer : (appendBytes) do a copy from 'bs' to current elems, new size : 131056
+writePool : 3, name=Test2 index in Table=2563
+DBG559: -------
+DBG560: at pool iterator = 9
+DBG559: at pool iterator = java/lang/Object
+poolbuf: Some Byte Buffer : (appendByte) : 1
+poolbuf: Some Byte Buffer : Attempt to append char 16
+poolbuf: Some Byte Buffer : (appendBytes) do a copy from 'bs' to current elems, new size : 131056
+writePool : 3, name=java/lang/Object index in Table=7550
+About to call put char : index=8 size?10
+At putchar <</REPLACE, set buf at position=8 with value : 10
+End of Write Pool
+
+>> At endAttrs
+At putchar <</REPLACE, set buf at position=43 with value : 0
+>> Call to out.write : [first do a copy.appendBytes] (add databuf TO poolbuf) elements=131056
+>> Call to out.write : databuf size : 65520
+poolbuf: Some Byte Buffer : (appendBytes) do a copy from 'bs' to current elems, new size : 131056
+Compile complete with : status=0
